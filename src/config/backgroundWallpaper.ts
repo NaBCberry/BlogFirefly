@@ -37,9 +37,9 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
      */
     src: {
         // 桌面背景图片（支持单张或多张随机）
-        desktop: "public/images/upload/136911474_p0.webp",
+        desktop: "/public/images/upload/136911474_p0.webp",
         // 移动背景图片（支持单张或多张随机）
-        mobile: "public/images/upload/136911474_p0.webp",
+        mobile: "/public/images/upload/136911474_p0.webp",
     },
     // Banner模式特有配置
     banner: {
