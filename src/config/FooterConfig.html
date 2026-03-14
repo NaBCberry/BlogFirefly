@@ -1,1 +1,70 @@
-这里是HTML注入示例，你可以在这个文件中添加自定义的HTML内容
+<div class="beian-info" style="
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line-divider, rgba(0,0,0,0.1));
+">
+    <!-- ICP 备案号 -->
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style="
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--content-meta, #666);
+      text-decoration: none;
+      font-size: 13px;
+      transition: all 0.3s ease;
+      padding: 6px 12px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%);
+      border: 1px solid rgba(99, 102, 241, 0.15);
+    " onmouseover="this.style.background='linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%)';this.style.borderColor='rgba(99, 102, 241, 0.3)';"
+        onmouseout="this.style.background='linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%)';this.style.borderColor='rgba(99, 102, 241, 0.15)';">
+        <svg style="width: 16px; height: 16px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path d="M12 8v4" />
+            <circle cx="12" cy="16" r="1" />
+        </svg>
+        <span style="font-weight: 500;">粤 ICP 备 2026019032 号 -1</span>
+    </a>
+
+    <!-- 公安备案号 -->
+    <a href="https://beian.mps.gov.cn/" target="_blank" rel="noopener noreferrer" style="
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--content-meta, #666);
+      text-decoration: none;
+      font-size: 13px;
+      transition: all 0.3s ease;
+      padding: 6px 12px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%);
+      border: 1px solid rgba(34, 197, 94, 0.15);
+    " onmouseover="this.style.background='linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%)';this.style.borderColor='rgba(34, 197, 94, 0.3)';"
+        onmouseout="this.style.background='linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%)';this.style.borderColor='rgba(34, 197, 94, 0.15)';">
+        <svg style="width: 16px; height: 16px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" />
+            <path d="M12 8v4" />
+            <circle cx="12" cy="16" r="1" />
+        </svg>
+        <span style="font-weight: 500;">粤公网安备 44010502003920 号</span>
+    </a>
+</div>
+
+<!-- 暗色模式适配 -->
+<style>
+    @media (prefers-color-scheme: dark) {
+        .beian-info a {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+    }
+
+    html.dark .beian-info a {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+</style>

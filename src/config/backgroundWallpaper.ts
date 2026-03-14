@@ -51,21 +51,16 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
         // 主页横幅文字
         homeText: {
             // 是否启用主页横幅文字
-            enable: true,
+            enable: false,
             // 是否允许用户通过控制面板切换横幅标题显示
-            switchable: true,
+            switchable: false,
             // 主页横幅主标题
-            title: "Lovely firefly!",
+            title: "阿能天下第一",
             // 主页横幅主标题字体大小
             titleSize: "3.8rem",
             // 主页横幅副标题
             subtitle: [
-                "In Reddened Chrysalis, I Once Rest",
-                "From Shattered Sky, I Free Fall",
-                "Amidst Silenced Stars, I Deep Sleep",
-                "Upon Lighted Fyrefly, I Soon Gaze",
-                "From Undreamt Night, I Thence Shine",
-                "In Finalized Morrow, I Full Bloom",
+                "阿噗噜派",
             ],
             // 主页横幅副标题字体大小
             subtitleSize: "1.5rem",
@@ -92,15 +87,15 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
             },
             text: {
                 // 桌面端要显示的来源文本
-                desktop: "Pixiv - 晚晚喵",
+                desktop: "Pixiv - natsuba002",
                 // 移动端要显示的来源文本
-                mobile: "Pixiv - KiraraShss",
+                mobile: "Pixiv - natsuba002",
             },
             url: {
                 // 桌面端原始艺术品或艺术家页面的 URL 链接
-                desktop: "https://www.pixiv.net/users/108801776",
+                desktop: "https://www.pixiv.net/artworks/136911474",
                 // 移动端原始艺术品或艺术家页面的 URL 链接
-                mobile: "https://www.pixiv.net/users/42715864",
+                mobile: "https://www.pixiv.net/artworks/136911474",
             },
         },
         // 横幅导航栏配置
@@ -118,10 +113,10 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
                 // 桌面端是否启用水波纹动画效果
                 desktop: true,
                 // 移动端是否启用水波纹动画效果
-                mobile: true,
+                mobile: false,
             },
             // 是否允许用户通过控制面板切换水波纹动画
-            switchable: true,
+            switchable: false,
         },
     },
     // 全屏透明覆盖模式特有配置
